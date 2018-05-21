@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <substitutionProperty name="logbase" value="${catalina.base}/logs/"/>
+    <substitutionProperty name="logbase" value="${catalina.base}/logs/ehrLog/"/>
     <jmxConfigurator/>
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
@@ -8,6 +8,7 @@
         </layout>
     </appender>
     <appender name="logfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logbase}ehr.${bySecond}.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <FileNamePattern>${logbase}/%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>60</MaxHistory>
