@@ -31,6 +31,7 @@ public class LoginFilter implements Filter {
             HttpSession session = request.getSession();
             Object user = session.getAttribute(Constants.USER_IN_SESSION);
             if (user != null) {
+                logger.info("loginfilter do filter......");
                 filterChain.doFilter(servletRequest, servletResponse);
             } else {
                 HttpServletResponse response = (HttpServletResponse) servletResponse;

@@ -76,7 +76,7 @@ http://www.biqugezw.com/7_7047/1574634.html
         </form>
     </div>
 </div>
-
+<%--添加现金流水的弹出框--%>
 <div id="addWin" class="easyui-window normal_win" data-options="title:'添加现金流水', closed:true">
     <form id="addForm">
         <table>
@@ -136,7 +136,7 @@ http://www.biqugezw.com/7_7047/1574634.html
         </table>
     </form>
 </div>
-
+<%--编辑现金流水的弹出框--%>
 <div id="editWin" class="easyui-window normal_win" data-options="title:'编辑现金流水', closed:true">
     <form id="editForm">
         <input type="hidden" name="id"/>

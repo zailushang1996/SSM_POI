@@ -24,7 +24,6 @@
         <filter-name>LoginFilter</filter-name>
         <filter-class>top.zzh.filter.LoginFilter</filter-class>
     </filter>
-
     <filter-mapping>
         <filter-name>LoginFilter</filter-name>
         <url-pattern>/*</url-pattern>
